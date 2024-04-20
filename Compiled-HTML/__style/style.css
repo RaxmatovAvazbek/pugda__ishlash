@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: black;
+}
+.header h1 {
+  color: red;
+  font-size: 5rem;
+}/*# sourceMappingURL=style.css.map */
