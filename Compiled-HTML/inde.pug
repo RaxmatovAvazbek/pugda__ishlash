@@ -4,7 +4,162 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../__style/style.css")
+        link(rel="stylesheet", href="https://unpkg.com/boxicons@latest/css/boxicons.min.css")
         title Sarlavha
     body 
         header.header#header 
-            h1 salom pug
+            .header_container.container 
+                .header__logo 
+                    a(href="#")
+                        img(src="../img/logo/logo (1).svg",     alt="logo") 
+                        img(src="../img/logo/right.svg", alt="")
+
+                nav.nav
+                    ol.nav__list 
+                        li.nav__list__item
+                            a(href="#") About 
+                        li.nav__list__item
+                            a(href="#") Services 
+                        li.nav__list__item
+                            a(href="#") Technologies
+                        li.nav__list__item
+                            a(href="#") How To 
+
+                .header__button 
+                    button CONTACT US
+                    button JOIN HYDRA
+
+
+        main.main#main 
+            .main__about.container 
+                .main__content 
+                    h2 
+                        span Dive
+                        Ento  The Depths Of  
+                        span Virtual Reality 
+                    p Lorem ipsum dolor sit amet, consectetur   adipiscing elit, sed do
+                      eiusmod tempor incididunt ut labore et dolore nisl tincidunt eget.
+                      Lectus mauris eros in vitae.     
+                    .main__button 
+                        button BUILD YOUR WORLD
+                        img(src="../img/logo/rihgt.svg", alt="")
+                .main__picture 
+                    img(src="../img/pexels.png", alt="bu yerda rasm bor")
+
+
+        section.section#section.container  
+            .section__container 
+                .section__box 
+                    img(src="../img/logo/icon_location.svg", alt="")
+                    .text__box__inner 
+                        h4 Pay Us a Visit
+                        p Union St, Seattle, WA 98101, United States
+                .section__box 
+                    img(src="../img/logo/icon_call.svg", alt="")
+                    .text__box__inner 
+                        h4 Give Us a Call
+                        p (110) 1111-1010
+                .section__box 
+                    img(src="../img/logo/icon_message.svg", alt="")
+                    .text__box__inner 
+                        h4 Send Us a Message
+                        p Contact@HydraVTech.com
+        
+
+        section.about#about 
+            .about__big 
+                .about__content__first_page.container
+                    .about__content 
+                        h4 INTRODUCTION
+                            br
+                            span  TO HYDRA VR
+                                img(src="../img/left.png", alt="")
+                    .about__text 
+                        p Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+                .section__about.container
+                    .main__img  
+                        img(src="../img/about__img.png", alt="bu yerda rasm bor")
+                    .main__text 
+                        h2 ABOUT
+                            br
+                            span  HYDRA VR
+                        p   Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet cursus sit amet. Vel eros 
+                        .main__button 
+                            button BUILD YOUR WORLD
+
+                .about__content__first_page.container
+                    .about__content 
+                        h4 WHY BUILD
+                            br
+                            span  WITH HYDRA?
+                                img(src="../img/left.png", alt="")
+                    .about__text 
+                        p Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.            
+        
+        .sectionn.container 
+                .box__container__card
+                    .box__card 
+                        img(src="../img/card1.png", alt="card1")
+                        .card__inner__text 
+                            h3 SIMULATION
+                            p  Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.
+                            button.button TRY IT NOW
+                    .box__card 
+                        img(src="../img/card2.png", alt="card2")
+                        .card__inner__text 
+                            h3 SIMULATION
+                            p  Vitae sapien pellentesque habitant morbi nunc. Viverra   aliquet porttitor rhoncus libero justo laoreet sit amet   vitae.
+                            button.button TRY IT NOW
+                    .box__card 
+                        img(src="../img/card3.png", alt="card3")
+                        .card__inner__text 
+                            h3 SIMULATION
+                            p  Vitae sapien pellentesque habitant morbi nunc. Viverra   aliquet porttitor rhoncus libero justo laoreet sit amet   vitae.
+                            button.button TRY IT NOW
+                    .box__card 
+                        img(src="../img/card4.png", alt="card4")
+                        .card__inner__text 
+                            h3 SIMULATION
+                            p  Vitae sapien pellentesque habitant morbi nunc. Viverra   aliquet porttitor rhoncus libero justo laoreet sit amet   vitae.
+                            button.button TRY IT NOW    
+                .img__page2.container     
+                    .container__images
+                        h1 TECHNOLOGIES & HARDWARE
+                        br 
+                        span USED BY HYDRA VR.
+                        a(href="#") <i class='bx bxs-chevron-down' ></i>
+                    .container__brand 
+                        .brand__box 
+                            img(src="../img/logo/brand1.svg", alt="")
+                        .brand__box 
+                            img(src="../img/logo/brand2.svg", alt="")
+                        .brand__box 
+                            img(src="../img/logo/brand3.svg", alt="")
+                        .brand__box 
+                            img(src="../img/logo/brand4.svg", alt="")
+                .about__content__first_page3.container
+                    .about__content 
+                        h4 WHY BUILD
+                            br
+                            span  WITH HYDRA?
+                                img(src="../img/left.png", alt="")
+                    .about__text 
+                        p Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.   
+
+        .form__container 
+            form.form.container
+                h3 JOIN HYDRA
+                p Let’s Build Your VR Experience
+                .row__form 
+                    .column__form 
+                        .input__box 
+                            input(type="text" placeholder="First Name")
+                        .input__box 
+                            input(type="email" placeholder="Email")
+                    .column__form
+                        .input__box 
+                            input(type="text" placeholder="Last Name")
+                        .input__box 
+                            input(type="number" placeholder="Phone Number")
+                    textarea(name="", cols="30", rows="10" placeholder="Enter your message...") 

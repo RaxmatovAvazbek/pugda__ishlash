@@ -1,13 +1,477 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-.header{
-  background-color: black;
+// ======UMUMIY STILLAR===========
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&family=Quicksand&family=Roboto&display=swap");
 
-    h1 {
-        color: red;
-        font-size: 5rem;
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--backround-color);
+  color: var(--text-color);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1315px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+:root {
+  --backround-color: #302c42;
+  --text-color: #ffffff;
+  --button-backround: #8176af;
+}
+
+// ======UMUMIY STILLAR===========
+
+// ========HEADER STILLARI START=======
+.header {
+  background-color: var(--backround-color);
+  padding: 30px 0px;
+  color: #fff;
+
+  .header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header__logo {
+      a {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
     }
+    // =====NAVBAR STILI START==
+    .nav {
+      .nav__list {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+
+        .nav__list__item a {
+          color: white;
+          text-decoration: none;
+          font-size: 18px;
+        }
+      }
+    }
+    // =====NAVBAR STILI OXIRI==
+
+    // =====BUTTON STILI STAR==
+    .header__button {
+      button {
+        font-weight: 700;
+        cursor: pointer;
+        border: 2px solid #fff;
+        border-radius: 25px;
+        background-color: transparent;
+        padding: 15px 20px;
+        color: white;
+        transition: all 0.3s ease;
+        margin-right: 10px;
+      }
+      button:nth-child(2) {
+        background-color: var(--button-backround);
+        border: none;
+        color: var(--backround-color);
+      }
+    }
+
+    // =====BUTTON STILI END=========
+  }
+}
+// ========HEADER STILLARI END========
+
+// =====MAIN QISMI STILI START========
+
+.main {
+  padding: 7% 0;
+  .main__about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // =====MAIN CONTENT  QISMI BOSHLANISHI======
+    .main__content {
+      max-width: 455px;
+
+      h2 {
+        margin-bottom: 36px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56.8px;
+        span {
+          color: var(--button-backround);
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 10px;
+      }
+      .main__button {
+        display: flex;
+        align-items: center;
+
+        button {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 14.5px;
+          border: none;
+          border-radius: 40px;
+          padding: 15px 28px;
+          background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+        }
+      }
+      // =====MAIN CONTENT  QISMI TUGASHI======
+    }
+    // =====MAIN PICTURE RASM QISMI ======
+    .main__picture {
+      img {
+        border: 1rem solid #00000021;
+        border-radius: 100px 100px 100px 240px;
+      }
+    }
+    // =====MAIN PICTURE RASM QISMI TUGASHI======
+  }
+}
+
+// =====MAIN QISMI STILI END==========
+
+// =====SECTION QISMI STILI START==========
+#section {
+  padding: 0 35px;
+}
+.section {
+  background: radial-gradient(
+    50% 2900.76% at 50% 53.89%,
+    rgba(58, 52, 86, 0.95) 0%,
+    #211e2e 100%
+  );
+  border-radius: 90px;
+  // ======CONTAINER  OTA ELEMENTI  BOX =====
+  .section__container {
+    padding: 40px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    // flex-shrink: 1;
+    // ======CONTAINER  OTA ELEMENTI  BOX =====
+
+    // ======KICHIK BOX =====
+    .section__box {
+      flex-grow: 1;
+      padding: 20px 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-right: 0.1rem solid var(--button-backround);
+
+      h4 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29.5px;
+        margin-bottom: 10px;
+      }
+    }
+    .section__box:last-child {
+      border: none;
+    }
+    // ======KICHIK BOX =====
+  }
+}
+
+// =====SECTION QISMI STILI END==========
+
+// =====ABOUT QISMI STILI START==========
+
+.about {
+  padding: 7% 0;
+
+  .about__big {
+    .about__content__first_page {
+      // padding: 50px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 100px;
+      .about__content {
+        gap: 1rem;
+
+        h4 {
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 43.5px;
+          span {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            font-weight: 300;
+          }
+        }
+      }
+      .about__text {
+        max-width: 600px;
+        p {
+          font-weight: 400;
+          line-height: 25px;
+          font-size: 18px;
+        }
+      }
+    }
+    // =====IKKINCHI SECTION QISMI BOSHLANISHI=======
+    .section__about {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 5rem;
+      // =======CONTENT QISMI STYLE BOSHLANISHI=====
+
+      .main__text {
+        max-width: 560px;
+        h2 {
+          font-weight: 700;
+          font-size: 36px;
+          margin-bottom: 10px;
+          span {
+            font-weight: 300;
+            line-height: 43.5px;
+          }
+        }
+        p {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 20px;
+          margin-bottom: 30px;
+        }
+        .main__button {
+          display: flex;
+          align-items: center;
+
+          button {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 14.5px;
+            border: none;
+            border-radius: 40px;
+            padding: 15px 28px;
+            background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+          }
+        }
+      }
+
+      // =======CONTENT QISMI STYLE TUGASHI=========
+    }
+    // =====IKKINCHI SECTION QISMI TUGASHI=======
+  }
+}
+
+// =====ABOUT QISMI STILI END============
+
+// ====CARD SECTION  QISMI STILI START============
+.sectionn {
+  padding: 40px;
+
+  .box__container__card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+
+    // =======CARD STYLE BOSHLANISHI======
+    .box__card {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      border-radius: 40px;
+      padding: 50px 30px;
+      background: radial-gradient(50% 50% at 50% 50%, #433d60 0%, #211e2e 100%);
+      h3 {
+        display: inline-block;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29.5px;
+        margin-bottom: 30px;
+        position: relative;
+      }
+      h3::before {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        width: 100%;
+        height: 0.8px;
+        right: 0;
+        left: 0;
+        background: var(--button-backround);
+      }
+      // =====IMG STYLE =====
+      img {
+        margin-bottom: 20px;
+        border-radius: 50%;
+        border: 0.8rem solid #0e0e0e52;
+      }
+      // =====IMG STYLE =====
+
+      // =====PARAGRAF STYLE =====
+      p {
+        text-align: left;
+        font-weight: 400;
+        font-size: 13.4px;
+        line-height: 18.6px;
+        margin-bottom: 25px;
+      }
+      // =====PARAGRAF STYLE =====
+      .button {
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        text-align: center;
+        font-size: 14px;
+        padding: 8px 25px;
+        font-weight: 600;
+        line-height: 29.5px;
+        border-radius: 40px;
+        border: none;
+        background-color: var(--button-backround);
+      }
+      .button:hover {
+        border: 2px solid var(--text-color);
+        background: transparent;
+        color: var(--text-color);
+      }
+    }
+    // =======CARD STYLE TUGASHI======
+  }
+  // =======TECHNOLIGIES STYLE START======
+  .img__page2 {
+    padding: 70px 0;
+    text-align: center;
+
+    // =======BACKROUND IMG BOSHLANISHI======
+    .container__images {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      height: 304px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background: url(../img/card_section_techno.png);
+      border-radius: 150px;
+      h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 43.5px;
+        span {
+          font-weight: 300;
+        }
+      }
+      a {
+        position: absolute;
+        bottom: -28px;
+        width: 60px;
+        height: 60px;
+        background-color: var(--button-backround);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--text-color);
+        border-radius: 50%;
+      }
+    }
+    // =======BACKROUND IMG TUGASHI======
+
+    // =======BRAND IMG BOSHLANISHI======
+    .container__brand {
+      padding: 50px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    // =======BRAND IMG TUGASHI==========
+  }
+  // =====ENG PASTKI QISMI STYLE BOSHLANISHI====
+  .about__content__first_page3 {
+    display: flex;
+    justify-content: space-between;
+
+    .about__content {
+      h4 {
+        font-size: 36px;
+      }
+      span {
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+    .about__text {
+      max-width: 500px;
+    }
+    // =====ENG PASTKI QISMI STYLE BOSHLANISHI====
+  }
+}
+
+// ====CARD SECTION  QISMI STILI END==============
+
+// ====CARD SECTION  QISMI STILI END==============
+
+.form__container {
+  form.form.container {
+    padding: 100px;
+    background: radial-gradient(50% 50% at 50% 50%, #403a5f 0%, #211e2e 100%);
+    border-radius: 100px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    text-align: center;
+    h3 {
+      font-weight: 700;
+      font-size: 37px;
+      line-height: 43.5px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+    .row__form {
+      .column__form {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        // flex-wrap: wrap;
+        width: 100%;
+        .input__box {
+          margin: 5px;
+          width: 100%;
+          input {
+            border: none;
+            border: 2px solid var(--text-color);
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--backround-color);
+            color: var(--text-color);
+            border-radius: 1.5rem;
+          }
+          input::placeholder{
+            color: #fff;
+          }
+        }
+        textarea {
+          width: 100%;
+          border-radius: 50px;
+          resize: none;
+        }
+      }
+    }
+  }
 }
