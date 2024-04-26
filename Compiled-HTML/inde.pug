@@ -11,7 +11,7 @@ html(lang="en")
         header.header#header 
             .header_container.container 
                 .header__logo 
-                    a(href="#")
+                    a.logo(href="#")
                         img(src="../img/logo/logo (1).svg",     alt="logo") 
                         img(src="../img/logo/right.svg", alt="")
 
@@ -151,15 +151,48 @@ html(lang="en")
             form.form.container
                 h3 JOIN HYDRA
                 p Let’s Build Your VR Experience
-                .row__form 
-                    .column__form 
-                        .input__box 
-                            input(type="text" placeholder="First Name")
-                        .input__box 
-                            input(type="email" placeholder="Email")
-                    .column__form
-                        .input__box 
-                            input(type="text" placeholder="Last Name")
-                        .input__box 
-                            input(type="number" placeholder="Phone Number")
-                    textarea(name="", cols="30", rows="10" placeholder="Enter your message...") 
+                form(action="")
+                    .input_box
+                        input(type="text", placeholder="Enter your name...")
+                        input(type="email", placeholder="Email Address...")
+                    .input_box
+                        input(type="tel", placeholder="Mobile number...")
+                        input(type="text", placeholder="Email Subject")
+                textarea(name="", id="", cols="30", rows="10", placeholder="Your Message")
+                button.btn SUBMIT
+        footer.footer 
+            .footer__container.container 
+                .footer__box 
+                    h2 SOCIALIZE WITH HYDRA
+                    .social__media 
+                        a(href="#") <i class='bx bxl-facebook'></i>
+                        a(href="#") <i class='bx bxl-linkedin' ></i>
+                        a(href="#") <i class='bx bxl-twitter' ></i>
+                        a(href="#") <i class='bx bxl-youtube' ></i>
+                        a(href="#") <i class='bx bxl-instagram'></i>
+                    span 
+                .footer__box 
+                    span 
+                    a(href="#") ABOUT
+                    a(href="#")  SERVICES 
+                    a(href="#")  TECHNOLOGIES
+                    a(href="#")  HOW TO
+                    a(href="#")  JOIN HYDRA
+                .footer__box 
+                    span 
+                    a(href="#") F.A.Q
+                    a(href="#")  SITEMAP 
+                    a(href="#")  CONDITIONS
+                    a(href="#")  LICENSES
+                .footer__box 
+                    h2 SOCIALIZE WITH HYDRA
+                    .social__media 
+                        a(href="#") <i class='bx bxl-facebook'></i>
+                        a(href="#") <i class='bx bxl-linkedin' ></i>
+                        a(href="#") <i class='bx bxl-twitter' ></i>
+                        a(href="#") <i class='bx bxl-youtube' ></i>
+                        a(href="#") <i class='bx bxl-instagram'></i>
+                    span 
+                    button.btn BUILD YOUR WORLD 
+            .footer__text 
+                p 2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED            
